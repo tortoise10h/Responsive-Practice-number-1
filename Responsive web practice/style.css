@@ -1,0 +1,130 @@
+/*Core style*/
+*{
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:#333;
+    color:white;
+    font-size:1.1em;
+    line-height:1.5;
+    text-align:center;
+}
+img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+h1, h2, h3{
+    margin:0;
+    padding:1em 0;
+}
+p{
+    margin:0;
+    padding:1em 0;
+}
+.button{
+    display:inline-block;
+    background:#333;
+    border:1px solid #666;
+    text-decoration:none;
+    color:white;
+    padding:1em 2em;
+    transition:0.4s;
+}
+.button:hover{
+    background:#eaeaea;
+    color:#333;
+}
+/*Header showcase*/
+#showcase{
+    min-height:450px;
+    color:#fff;
+    text-align:center;
+}
+#showcase .bg-showcase{
+    position:absolute;
+    background:#333 url('https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=863ffeea823f0ffb0885fe1a5e77e645&auto=format&fit=crop&w=750&q=80');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    width:100%;
+    height:450px;
+    z-index:-1;
+    opacity:0.4;
+}
+#showcase h1{
+    padding-top:50px;
+
+}
+#showcase .content-wrap{
+    padding:0 1em;
+}
+
+/*Section A*/
+#section-a{
+    background:#eaeaea;
+    color:#333;
+    padding-bottom: 2em;
+}
+/*Section B*/
+#section-b{
+    padding:1em 1em 2em;
+}
+#section-b ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+#section-b li{
+    padding-bottom:1em;
+    background:#fff;
+    color:#333;
+}
+.card-content{
+    padding:1em;
+}
+/*Section C*/
+#section-c{
+    background:#fff;
+    color:#333;
+    padding:1em;
+}
+/*Section D*/
+#section-d .box{
+    color:#fff;
+    padding:1em;
+}
+#section-d .box:first-child{
+    background:#2690d9;
+}
+/*Main footer*/
+#main-footer{
+    background:#000;
+    color:#eaeaea;
+    padding:2em;
+}
+#main-footer a{
+    text-decoration:none;
+    color:#2690d9;
+}
+/*Media Queries*/
+@media screen and (min-width:700px){
+    .flex-box{
+        display:flex;
+    }
+    #section-b ul{
+        display:flex;
+        justify-content: space-around;
+    }
+    #section-b li{
+        width:31%;
+    }
+    #section-b div.card-img img{
+        min-height:300px;
+    }
+    #section-d div.box{
+        flex:50%;
+    }
+}
